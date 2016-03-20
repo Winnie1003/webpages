@@ -1,0 +1,227 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	width:100%;
+	background:url(images/body_bg.jpg);
+}
+
+#header{
+	width:100%;
+	height:85px;
+	border-bottom:#262626 solid 1px;
+	background:url(images/banner_bg.jpg);
+}
+
+#headertxt{
+	width:1130px;
+	height:85px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo{
+	margin-left:aotu;
+	width:200px;
+	height:52px;
+	text-align:center;
+	float:left;
+	padding-top:33px;
+}
+
+#nav ul li{
+	list-style:none;
+	width:150px;
+	text-align:center;
+	float:left;
+	margin-top:42px;
+}
+
+#nav ul li a{
+	font-size: 22px;
+	font-weight:600;
+}
+
+#login{
+	float:left;
+	width:180px;
+	margin-top:49px;
+	text-align:left;
+}
+
+#login em{
+	color:#DDDDDD;
+}
+
+#wrapper{
+	width:100%;
+	background: url(images/poetry_bg.png) #F8F8F8;
+	padding-top:45px;
+}
+
+#l_wrapper{
+	width:1130px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+#footer{
+	width:100%;
+	height:50px;
+	font-size:20px;
+	font-style:italic;
+	font-weight:600;
+	text-align:center;
+}
+
+#footer p{
+	margin-top:25px;
+}
+
+a:link{
+	text-decoration:none;
+	color:#DDDDDD;
+}
+
+a:visited{
+	color:#DDDDDD;
+}
+
+a:hover{
+	color:#FFFFFF;
+}
+
+#logo a:link{
+	color:#FFFFFF;
+}
+#logo a:visited{
+	color:#FFFFFF;
+}
+
+#gnosis a:link{
+	color:#FFFFFF;
+}
+
+#gnosis a:visited{
+	color:#FFFFFF;
+}
+
+#Con{
+	width:900px;
+/*            position:relative;*/
+        }
+        /*头像样式*/
+#Con dl{
+	width:100px;
+	height:130px;
+	background: #fff;
+	padding:10px;
+	margin-left: 200px;
+}
+
+#Con dl dt{
+	width:100px;
+	height:100px;
+	background: #ffff33;
+}
+
+#Con dl dd{
+	width:100px;
+	height:30px;
+	font-size: 14px;
+	text-align: center;
+	line-height:30px;
+}
+/*List样式*/
+#Con .List{
+	width:600px;
+/*         height:700px;*/
+/*           background: yellow;*/
+	margin-left:260px;
+	border-left:2px solid #66aaff;
+	padding-top:30px;
+	/*position:absolute;*/
+	/*top:150px;*/
+}
+#Con .List ul li{
+	/*width:600px;*/
+	height:200px;
+	/*border: 3px solid yellow;*/
+	list-style-type: none;
+	position:relative;
+	margin-bottom: 30px;
+	-webkit-animation:sc 2s;/*定义动画*/
+	
+}
+#Con .List ul li .label{
+	width:120px;
+	height:30px;
+/*            border:1px solid red;*/
+	margin-left:0px;
+	position:absolute;
+	top:100px;
+	left:-120px;
+}
+#Con .List ul li .label font{
+	width:90px;
+	height:30px;
+	background: #000;
+	display:block;
+	float:left;
+	font-size:14px;
+	color:#fff;
+	text-align: center;
+	line-height: 30px;
+	position:absolute;
+	left:10px;
+	-webkit-animation:myfirst 2s;
+	/*display: none;*/
+}
+#Con .List ul li .label img.jt{
+	position: absolute;
+	left:97px;
+	top:5px;
+}
+#Con .List ul li .label span{
+	width: 6px;
+	height:6px;
+	background: #99ff33;
+	display: block;
+	border:2px solid #fff;
+	float:left;
+	position:absolute;
+	top:8px;
+	right:-4px;
+	border-radius: 10px;
+}
+#Con .List ul li .ListCon{
+	height: 200px;
+	/*background: red;*/
+	border-radius: 10px;
+	margin-left:10px;
+	background: rgba(255,255,255,0.3);
+	box-shadow: 0px 0px 10px #000;
+	overflow:hidden;
+}
+#Con .List ul li .ListCon img{
+	float:left;
+	margin:0 20px 0 20px;
+	}
+#Con .List ul li .ListCon p{
+	line-height:24px;
+	padding:50px 20px;
+	font-size:12px;
+	color:#373737;
+	}
+/*css3动画效果*/
+@-webkit-keyframes myfirst{
+	from{
+		-webkit-transform:rotate(220deg) scale(0.2);
+	}to{
+		-webkit-transform:rotate(0deg) scale(1);
+	}
+}

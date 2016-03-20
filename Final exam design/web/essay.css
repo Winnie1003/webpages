@@ -1,0 +1,133 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	width:100%;
+	background:url(images/body_bg.jpg);
+	font-size:14px;
+}
+
+#header{
+	width:100%;
+	height:85px;
+	border-bottom:#262626 solid 1px;
+	background:url(images/banner_bg.jpg);
+}
+
+#headertxt{
+	width:1130px;
+	height:85px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo{
+	margin-left:aotu;
+	width:200px;
+	height:52px;
+	text-align:center;
+	float:left;
+	padding-top:33px;
+}
+
+#nav ul li{
+	list-style:none;
+	width:150px;
+	text-align:center;
+	float:left;
+	margin-top:42px;
+}
+
+#nav ul li a{
+	font-size: 22px;
+	font-weight:600;
+}
+
+#login{
+	float:left;
+	width:180px;
+	margin-top:49px;
+	text-align:left;
+}
+
+#login em{
+	color:#DDDDDD;
+}
+
+#wrapper{
+	width:100%;
+	height:800px;
+	background: url(images/poetry_bg.png) #F8F8F8;
+	padding-top:45px;
+}
+
+#l_wrapper{
+	width:1130px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+a{text-decoration:none; font-family:"Microsoft Yahei";}
+ul,li{list-style:none;}
+
+#video{width:1000px; height:700px; margin:100px auto 0; background:url("images/1.jpg") no-repeat center; 
+	background-size:1000px 700px; position:relative;}
+#video .Tv{width:908px; height:446px; position:absolute; left:47px; top:30px;}
+#video .Bar{width:908px; height:280px; position:absolute; left:47px; top:30px; overflow:hidden;}
+
+#video .Bar p{width:908px; position:absolute; font-weight:bold; font-size:22px;}
+
+#comment{width:100%; height:60px; background-color:rgba(0,0,0,.7); padding-top:20px;}
+#comment .comment_con{width:800px; height:40px; margin:0 auto;}
+#comment .comment_con .txt{width:675px; height:40px; background-color:#fff;
+						padding-left:25px; border-radius:5px 0 0 5px; border:0; outline:0; float:left;}
+#comment .comment_con .btn a{display:inline-block; width:100px; height:40px; background-color:#7DB718;
+							font-size:14px; text-align:center; line-height:40px; color:#fff;
+							border-radius:0 5px 5px 0; float:left; transition:all 0.3s ease 0s;}
+#comment .comment_con .btn a:hover{background-color:#699F00;}	
+
+#footer{
+	width:100%;
+	height:50px;
+	font-size:20px;
+	font-style:italic;
+	font-weight:600;
+	text-align:center;
+}
+
+#footer p{
+	margin-top:25px;
+}
+
+a:link{
+	text-decoration:none;
+	color:#DDDDDD;
+}
+
+a:visited{
+	color:#DDDDDD;
+}
+
+#communicate a:link{
+	color:#FFFFFF;
+}
+
+#communicate a:visited{
+	color:#FFFFFF;
+}
+
+a:hover{
+	color:#FFFFFF;
+}
+
+#logo a:link{
+	color:#FFFFFF;
+}
+#logo a:visited{
+	color:#FFFFFF;
+}

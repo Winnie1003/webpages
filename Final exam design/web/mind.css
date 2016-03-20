@@ -1,0 +1,185 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	width:100%;
+	background:url(images/body_bg.jpg);
+	font-size:14px;
+}
+
+#header{
+	width:100%;
+	height:85px;
+	border-bottom:#262626 solid 1px;
+	background:url(images/banner_bg.jpg);
+}
+
+#headertxt{
+	width:1130px;
+	height:85px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#logo{
+	margin-left:aotu;
+	width:200px;
+	height:52px;
+	text-align:center;
+	float:left;
+	padding-top:33px;
+}
+
+#nav ul li{
+	list-style:none;
+	width:150px;
+	text-align:center;
+	float:left;
+	margin-top:42px;
+}
+
+#nav ul li a{
+	font-size: 22px;
+	font-weight:600;
+}
+
+#login{
+	float:left;
+	width:180px;
+	margin-top:49px;
+	text-align:left;
+}
+
+#login em{
+	color:#DDDDDD;
+}
+
+#wrapper{
+	width:100%;
+	height:900px;
+	background: url(images/poetry_bg.png) #F8F8F8;
+}
+
+#l_wrapper{
+	width:1130px;
+	height:auto;
+	margin:0 auto;
+	padding-top:40px;
+}
+
+#l_wrapper .w_nav{
+	width:1000px;
+	height:42px;
+	align-content:center;
+	border-bottom:#aaaaab 1px solid;
+	}
+#l_wrapper .w_nav span{
+	width:370px;
+	height:40px;
+	display:block;
+	float:right;
+	font-size:11px;
+	font-family:abel;
+	line-height:40px;
+	color:grey;
+	text-indent:4px;
+	font-weight:300;
+	}
+#l_wrapper .w_nav a{
+	width:100px;
+	display:block;
+	float:left;
+	text-align:center;
+	color:#fff;
+	height:40px;
+	font-size:14px;
+	line-height:40px;
+	}
+#l_wrapper .w_nav a.n_index{
+	background:#5EA51B;
+	}
+#l_wrapper .w_nav a.n_about{
+	background:#8BBF5D;
+	}
+#l_wrapper .w_about{
+	width:740px;
+	overflow::hidden;
+	background:url(images/r_line.jpg) repeat-y right;
+	float:left;
+	
+	}
+
+#l_wrapper p{
+	width:710px;
+	padding-bottom:20px;
+	color:#696969;
+	}
+#l_wrapper p a{
+	color:#1CA368;
+	}
+#l_wrapper h2{
+	dislpay:block;
+	color:#475231;
+	font-weight:normal;
+	margin:20px 0;
+	line-height:22px;
+	font-family:"宋体", Arial, Helvetica, sans-serif;
+	}
+#l_wrapper .w_right{
+	width:250px;
+	height:355px;
+	margin-top:10px;
+	float:right;
+	margin-right:110px;
+	}
+#l_wrapper .w_right .r_about{
+	width:250px;
+	height:315px;
+	margin:20px 0;
+	padding:10px 0 0 10px;
+	color:#999;
+	}
+#l_wrapper .w_right .r_about p span{
+	color:#1CA368;
+	}
+#footer{
+	width:983px;
+	height:50px;
+	border-top:1px solid #aaaaab;
+	clear:left;
+	margin-top:750px;
+	margin-left:102px;
+	text-align:center;
+	}
+
+
+a:link{
+	text-decoration:none;
+	color:#DDDDDD;
+	
+}
+
+a:visited{
+	color:#DDDDDD;
+}
+
+a:hover{
+	color:#FFFFFF;
+}
+
+#logo a:link{
+	color:#FFFFFF;
+}
+#logo a:visited{
+	color:#FFFFFF;
+}
+
+#mind a:link{
+	color:#FFFFFF;
+}
+
+#mind a:visited{
+	color:#FFFFFF;
+}
