@@ -1,0 +1,135 @@
+@charset "utfy-8";
+/***首页内页**/
+#head_nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#h_nav_ul{
+    width: 100%;
+	border-bottom:2px solid #2677B1;
+}
+#h_nav_ul>li{
+	text-align: center;
+	float: left;
+	width: 13%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #EFEFEF;
+    color:#212054;
+    margin-left: 2px;
+}
+#h_nav_ul::after{
+    display: block; content: ""; width: 0; clear: both;
+}
+#h_nav_ul>li:first-child{
+    margin-right: 2px;
+    margin-left: 0 !important;
+    width: 249px;
+    background-color: #2677B1;
+    color:#F7F7F7;
+}
+#h_nav_ul>li:first-child a{
+    color:#EFEFEF!important;
+}
+#h_nav_ul>li:first-child a:hover{
+    color: #F7F7F7!important;
+
+    background-color: #4981BD;
+}
+
+#h_nav_ul>li>a{
+    display: block;
+    width: 100%;
+}
+
+#h_nav_ul>li>a:hover{
+background-color:#F7F7F7 ;
+}
+
+.h_sub_menu{
+    border-top:2px solid #2677B1 ;
+    outline: 1px solid #D1D1D1;
+    display: none;
+}
+.h_sub_menu>li>a{
+    display: block;
+    width: 100%;
+}
+.h_sub_menu>li>a:hover{
+    display: block;
+    width: 100%;
+    background-color: #D9EFF1;
+}
+
+/*首页内页内容侧栏*/
+.list_content{
+    width: 1200px;
+    margin: 10px auto;
+}
+.list_content::after{
+    display: block;
+    clear: both;
+    content: '';
+    overflow: hidden;
+}
+.left_content{
+    width: 247px;
+    float: left;
+
+}
+.little_header{
+    width: 247px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color:#2677B1 ;
+    color: #F7F7F7;
+    margin-top:10px ;
+    position: relative;
+}
+.little_header>a{
+    position: absolute;
+    top:0;
+    left: 200px;
+    display:inline-block;
+    color: #F7F7F7;
+}
+.little_header>a:hover{
+ color: #C9CED0;
+}
+.little_content{
+    border: 1px solid #D1D1D1;
+}
+.little_content li{
+    height: 30px;
+    border-top: dashed 1px #dddddd;
+    line-height: 30px;
+}
+#ad_content{
+
+    border: 1px solid #D1D1D1;
+    height: 120px;
+    overflow: hidden;
+}
+#ad_content li{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+#ad_ul li:nth-child(2n){
+    background-color: #CCE9EC;
+}
+.odd li:nth-child(2n+1){
+    background-color: #CCE9EC;
+}
+.even li:nth-child(2n){
+    background-color: #CCE9EC;
+}
+/************************************/
+
+/*****公有public****/
+.list_content .main-right{
+    width: 948px;
+    float: right;
+}

@@ -1,0 +1,912 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="">
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>物流配送</title>
+	<script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/move.js"></script>
+	<script src="js/index.js"></script>	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="main">
+		<div id="top">
+			<div id="top_left">
+				<h3>欢迎光临,请登录</h3>
+					<ul>
+						<li>免费服务专线 400-0056-000</li>
+					</ul>
+			</div> <!-- top_left层结束 --> 
+			<div id="top_right">
+				<ul id="top_right_ul">
+					<li><a href="">我的个人中心</a></li>
+					<li><a href="">帮助中心</a></li>
+					<li><a href="">网站公告</a></li>
+					<li class="phone"><a href="">设为首页</a></li>
+					<li class="chat"><a href="">加入收藏</a></li>
+				</ul>
+			
+			</div>  <!--top_right结束-->
+		</div>    <!--top层-->
+	</div> <!--main主体层-->
+
+
+	<!-- 网站头区域 -->
+	<div id="headerWrap">
+		<div class="header">
+			<div class="left">
+				<h1 class="logo"><img src="images/logo.png" alt="城市配送"></h1>
+			</div>
+
+ 			<div class="register">
+					<div class="btn-group">
+							  <button type="button" class="btn btn-primary">
+									<span class="glyphicon glyphicon-user"></span> 登录
+							  </button>
+							  <button type="button" class="btn btn-primary">
+							  		<span class="glyphicon glyphicon-star"></span> 免费注册
+							  </button>
+ 					</div>
+			</div><!--register结束-->
+
+
+			<div class="right">
+				<form class="form-inline hidden-xs" role="form" action="">
+					<div class="form-group">
+				 		<div class="input-group">
+						 	<div class="input-group-btn">
+				                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+				                     淘货源 
+				                     <span class="caret"></span>
+				                  </button>
+				                  <ul class="dropdown-menu">
+				                     <li><a href="#">选车辆</a></li>
+				                     <li><a href="#">找仓库</a></li>
+				                     <li><a href="#">查订单</a></li>
+				                     <li class="divider"></li>
+				                     <li><a href="#">搜资讯</a></li>
+				                  </ul>
+              				</div><!-- input-group-btn -->
+							<input type="text" class="form-control" id="name" placeholder="请输入名称">
+			                    <span class="input-group-btn">
+			                  	    <button type="button" class="btn btn-primary">
+			  							<span class="glyphicon glyphicon-search"></span> 搜索go
+									</button>
+			               		</span>
+           		 		</div><!-- /input-group -->
+					</div><!--form-group-->
+				</form>
+			</div><!--right结束-->
+
+		</div><!--header-->
+	</div><!--headerWrap结束-->
+		
+	<!-- nav导航 -->
+	<div id="head_nav">
+		<ul id="h_nav_ul">
+			<li><a href="#">首页</a></li>
+
+			<li><a href="#">政务公告</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">图文资讯</a> </li>
+                    <li><a href="#">政务公告</a></li>
+                    <li><a href="#">政策法规</a></li>
+                </ul>
+            </li>
+			<li><a href="#">在线交易</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">最新货单</a> </li>
+                    <li><a href="#">最新车源</a></li>
+                    <li><a href="#">成交订单</a></li>
+                </ul>
+            </li>
+			<li><a href="#">城配资源</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">仓储出租</a> </li>
+                    <li><a href="#">设备供应</a></li>
+                    <li><a href="#">设备需求</a></li>
+                    <li><a href="#">末端网点</a></li>
+                </ul>
+            </li>
+			<li><a href="#">物流相关</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">物流招标</a> </li>
+                    <li><a href="#">物流金融</a></li>
+                    <li><a href="#">企业招聘</a></li>
+					<li><a href="#">物流人才</a></li>
+                </ul>
+            </li>
+			<li><a href="#">物流数据</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">行业数据统计</a> </li>
+                    <li><a href="#">平台数据统计</a></li>
+                    <li><a href="#">运价指数</a></li>
+                </ul>
+            </li>
+			<li><a href="#">诚信认证</a>
+                <ul class="h_sub_menu">
+                    <li><a href="#">企业诚信排行</a> </li>
+                    <li><a href="#">诚信评价</a></li>
+
+                </ul>
+            </li>
+
+		</ul>
+	</div>
+	<!--nav结束-->
+	
+	
+	<div id="banner-block">
+		<div class="tab-content">
+			<ul>
+				<li class="active">图文资讯</li>
+				<li>政务公告</li>
+				<li>政策法规</li>
+			</ul>
+			<div class="tab-1 selected" style="display: block;">
+				<img src="images/pic.jpg" alt="">
+			</div>
+			<div class="tab-2">
+				<ul>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					<li><p><a href="">国家物流平台参加第六届中日韩运</a></p><span>[2016-03-17]</span></li>
+					
+				</ul>
+			</div>
+
+			<div class="tab-3">
+				<img src="images/1.jpg" alt="">
+			</div>
+		</div><!--tab-content结束 -->
+		
+
+
+		<!-- banner轮播 -->
+		<div class="banner" id="bannerlist">
+			<ul>
+		    	<li style="display:block; filter:alpha(opacity=100); opacity:1;"><img src="images/1.jpg" alt=""/></li>
+		        <li><img src="images/2.jpg" alt=""/></li>
+		        <li><img src="images/3.jpg" alt=""/></li>
+		        <li><img src="images/4.jpg" alt=""/></li>
+		        <li><img src="images/5.jpg" alt=""/></li>
+   		 	</ul>
+		    <ol>
+		    	<li class="active">1</li>
+		        <li>2</li>
+		        <li>3</li>
+		        <li>4</li>
+		        <li>5</li>
+		    </ol>
+			
+
+		</div>
+		<!-- banner轮播结束-->
+
+
+
+		<!-- delivery -->
+		<div class="delivery">
+			<div class="cargo-bg-color">
+				<img src="images/house.png" alt="发货">
+				<span><a class="cargo-color" href="">我要发货</a></span>
+			</div>
+			<div class="send-bg-color">
+				<img src="images/house2.png" alt="配送">
+				<span><a class="send-color" href="">我要配送</a></span>
+			</div>
+		</div>
+		<!-- delivery结束 -->
+	</div>
+    <!--banner-block结束-->
+    
+	<!---->
+    <div id="menu-btn">
+    	<dl>
+    		<dd><img src="images/menu1.jpg" alt="淘资源" /></dd>
+    		<dt><a href="#">淘资源</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu2.jpg" alt="找仓库" /></dd>
+    		<dt><a href="#">找运力</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu3.jpg" alt="查菜单" /></dd>
+    		<dt><a href="#">查订单</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu4.jpg" alt="凭诚信" /></dd>
+    		<dt><a href="#">评诚信</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu5.jpg" alt="踩网点" /></dd>
+    		<dt><a href="#">找仓库</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu6.jpg" alt="清结算" /></dd>
+    		<dt><a href="#">找托盘</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu7.jpg" alt="找运力" /></dd>
+    		<dt><a href="#">找设备</a></dt>
+    	</dl>
+    	<dl>
+    		<dd><img src="images/menu8.jpg" alt="租托盘" /></dd>
+    		<dt><a href="#">供人才</a></dt>
+    	</dl>
+    </div>
+	<!---->
+    
+    <!--data-statistics-->
+	<div id="data-statistics">
+		<h2>物流数据统计</h2>
+		<div class="data-img">
+			<img src="images/data.png" />
+			<img src="images/data1.png" />
+			<img src="images/data2.png" />
+			<img src="images/data3.png" />
+			<img src="images/data4.png" />
+		</div>	
+	</div>
+	<!--data-statistics结束-->	
+	
+	
+	<!-- content内容区域 -->
+	<div id="content" class="content-style">
+		
+		<div class="cargo-message">
+			<h2>车辆信息</h2>
+				<form action="">
+					<dl>
+						<dt>车辆类型：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>车长：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>所属地：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>车辆状态：</dt>
+						<dd><input type="text"></dd><br>
+						<dt></dt>
+						<dd style="padding-top: 5px;"><button class="btn btn-warning search">搜索</button> <button class="btn btn-default more">更多</button></dd>
+					</dl>
+				</form>
+		</div>
+		<!-- cargo-message -->
+
+		<div class="cargo-table">
+			<table border="1">
+				<tr>
+					<th>车牌号</th>
+					<th>车辆类型</th>
+					<th>车长</th>
+					<th>车辆所属地</th>
+					<th>联系人</th>
+					<th>载重</th>
+					<th>状态</th>
+					<th>雇佣</th>
+					<th>具体联系方式</th>
+				</tr>
+				<tr>
+					<td>赣A0033*</td>
+					<td>厢式车</td>
+					<td>4.2m</td>
+					<td>新建区</td>
+					<td>孔先生</td>
+					<td>电议</td>
+					<td>配送中</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>赣1356*</td>
+					<td>高栏车</td>
+					<td>5m</td>
+					<td>红谷滩</td>
+					<td>李司机</td>
+					<td>电议</td>
+					<td>闲置</td>
+					<td>雇佣</td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>赣A0033*</td>
+					<td>厢式车</td>
+					<td>4.2m</td>
+					<td>新建区</td>
+					<td>孔先生</td>
+					<td>电议</td>
+					<td>配送中</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>赣A0033*</td>
+					<td>厢式车</td>
+					<td>4.2m</td>
+					<td>新建区</td>
+					<td>孔先生</td>
+					<td>电议</td>
+					<td>配送中</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>赣A0033*</td>
+					<td>厢式车</td>
+					<td>4.2m</td>
+					<td>新建区</td>
+					<td>孔先生</td>
+					<td>电议</td>
+					<td>配送中</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+			</table>
+		</div>
+		<!-- cargo-table -->
+	
+	</div>
+	<!-- content结束 -->
+
+	<!-- content-two -->
+	<div id="content-two" class="content-style">
+		
+		<div class="cargo-message">
+			<h2>货源信息</h2>
+				<form action="">
+					<dl>
+						<dt>始发地：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>目的地：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>货物名称：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>发货时间：</dt>
+						<dd><input type="text"></dd><br>
+						<dt></dt>
+						<dd style="padding-top: 5px;"><button class="btn btn-warning search">搜索</button> <button class="btn btn-default more">更多</button></dd>
+					</dl>
+				</form>
+		</div>
+		<!-- cargo-message -->
+
+		<div class="cargo-table">
+			<table border="1">
+				<tr>
+					<th>货物名称</th>
+					<th>总重量</th>
+					<th>始发地</th>
+					<th>目的地</th>
+					<th>车型要求</th>
+					<th>运价</th>
+					<th>操作</th>
+					<th>详细</th>
+					
+				</tr>
+				<tr>
+					<td>蔬菜</td>
+					<td>1000kg</td>
+					<td>高新区</td>
+					<td>新建区</td>
+					<td></td>
+					<td>电议</td>
+					<td>等待抢单中</td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>蔬菜</td>
+					<td>1000kg</td>
+					<td>高新区</td>
+					<td>新建区</td>
+					<td></td>
+					<td>电议</td>
+					<td>等待抢单中</td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>蔬菜</td>
+					<td>1000kg</td>
+					<td>高新区</td>
+					<td>新建区</td>
+					<td></td>
+					<td>电议</td>
+					<td>等待抢单中</td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>蔬菜</td>
+					<td>1000kg</td>
+					<td>高新区</td>
+					<td>新建区</td>
+					<td></td>
+					<td>电议</td>
+					<td>等待抢单中</td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>蔬菜</td>
+					<td>1000kg</td>
+					<td>高新区</td>
+					<td>新建区</td>
+					<td></td>
+					<td>电议</td>
+					<td>等待抢单中</td>
+					<td> >>> </td>
+				</tr>
+			</table>
+		</div>
+		<!-- cargo-table -->
+	
+	</div>
+	<!-- content-two结束 -->
+
+
+
+	<div id="content-three" class="content-style">
+		
+		<div class="cargo-message">
+			<h2>仓储信息</h2>
+				<form action="">
+					<dl>
+						<dt>所属地：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>地址：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>面积：</dt>
+						<dd><input type="text"></dd><br>
+						<dt>仓库类型：</dt>
+						<dd><input type="text"></dd><br>
+						<dt></dt>
+						<dd style="padding-top: 5px;"><button class="btn btn-warning search">搜索</button> <button class="btn btn-default more">更多</button></dd>
+					</dl>
+				</form>
+		</div>
+		<!-- cargo-message -->
+
+		<div class="cargo-table">
+			<table border="1">
+				<tr>
+					<th>出租仓储</th>
+					<th>所属地</th>
+					<th>地址</th>
+					<th>仓储类型</th>
+					<th>仓储面积</th>
+					<th>闲置待用面积</th>
+					<th>状态</th>
+					<th>在线租赁</th>
+					<th>具体联系方式</th>
+					
+				</tr>
+				<tr>
+					<td>华南城仓库出租</td>
+					<td>新建区</td>
+					<td>南昌市华南城</td>
+					<td>普通仓库</td>
+					<td>2000平米</td>
+					<td></td>
+					<td>已占用</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>华南城仓库出租</td>
+					<td>新建区</td>
+					<td>南昌市华南城</td>
+					<td>普通仓库</td>
+					<td>2000平米</td>
+					<td></td>
+					<td>已占用</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>华南城仓库出租</td>
+					<td>新建区</td>
+					<td>南昌市华南城</td>
+					<td>普通仓库</td>
+					<td>2000平米</td>
+					<td></td>
+					<td>已占用</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>华南城仓库出租</td>
+					<td>新建区</td>
+					<td>南昌市华南城</td>
+					<td>普通仓库</td>
+					<td>2000平米</td>
+					<td></td>
+					<td>已占用</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+				<tr>
+					<td>华南城仓库出租</td>
+					<td>新建区</td>
+					<td>南昌市华南城</td>
+					<td>普通仓库</td>
+					<td>2000平米</td>
+					<td></td>
+					<td>已占用</td>
+					<td></td>
+					<td> >>> </td>
+				</tr>
+			</table>
+		</div>
+		<!-- cargo-table -->
+	
+	</div>
+	<!-- content-three结束 -->
+
+
+	<div id="deliveryMap" class="dilivery-map">
+		<h1>配送地图</h1>
+		<div class="map-menu">
+			<div class="menu-list">
+				<ul>
+					<li>末端网点</li>
+					<li>供货商</li>
+					<li>物流商</li>
+					<li style="border-bottom:none;">仓储资源</li>
+				</ul>
+			</div><!-- menu-list -->
+
+			<div class="menu-message">
+				<form action="">
+					<select class="market-list" name="market">
+					  <option selected="selected">请选择类型</option>
+					  <option value="volvo">个体便利店</option>
+					  <option value="saab">连锁便利店</option>
+					  <option value="opel">连锁超市店</option>
+					  <option value="audi">其他</option>
+					</select>
+					<select class="area-list" name="area">
+					  <option selected="selected">请选择区域</option>
+					  <option value="volvo">青山湖区</option>
+					  <option value="saab">西湖区</option>
+					  <option value="opel">红谷滩新区</option>
+					  <option value="audi">东湖区</option>
+					  <option value="opel">新建区</option>
+					  <option value="audi">高新区</option>
+					</select>
+					<button type="button" class="btn">查询</button>
+				</form>
+				<dl>
+					<dt>南昌小平超市</dt>
+					<dd>地址:南昌市红谷滩长寿路588号</dd>
+					<dd>联系人：小蔡</dd>
+					<dt>南昌小平超市</dt>
+					<dd>地址:南昌市红谷滩长寿路588号</dd>
+					<dd>联系人：小蔡</dd>
+					<dt>南昌小平超市</dt>
+					<dd>地址:南昌市红谷滩长寿路588号</dd>
+					<dd>联系人：小蔡</dd>
+				</dl>
+			</div><!--menu-message-->
+		</div><!--map-menu-->
+
+		
+		<div class="map">
+			
+			<img src="images/map.jpg" alt="">
+
+		</div><!-- map -->
+		
+     
+<!-- 实用工具 -->
+	<div class="tool">
+		<h1>实用工具</h1>
+		<ul>
+			<li>
+				<img src="images/menu10.jpg" alt="">
+				<a href="">加油站</a>
+				<span>南昌市加油站</span>
+			</li>
+			<li>
+				<img src="images/menu10.jpg" alt="">
+				<a href="">路况查询</a>
+				<span>最快掌握路况</span>
+			</li>
+			<li>
+				<img src="images/menu10.jpg" alt="">
+				<a href="">里程查询</a>
+				<span>价格估算依据</span>
+			</li>
+			<li>
+				<img src="images/menu10.jpg" alt="">
+				<a href="">天气查询</a>
+				<span>南昌天气预报</span>
+			</li>
+			<li>
+				<img src="images/menu10.jpg" alt="">
+				<a href="">快件查询</a>
+				<span>查询所有快件</span>
+			</li>
+		</ul>
+	</div><!-- 实用工具 -->
+
+</div><!-- deliveryMap -->
+
+
+<div id="main-job">
+		<div class="company">
+			<h1>企业招聘</h1>
+			<table border="1">
+				<tr>
+					<th>招聘单位</th>
+					<th>所属地区</th>
+					<th>提供职位</th>
+					<th>薪资</th>
+				</tr>
+				<tr>
+					<td>江西众帮物流有限公司</td>
+					<td>青山湖区</td>
+					<td>司机</td>
+					<td>2000元/月</td>
+				</tr>
+				<tr>
+					<td>江西众帮物流有限公司</td>
+					<td>青山湖区</td>
+					<td>司机</td>
+					<td>2000元/月</td>
+				</tr>
+				<tr>
+					<td>江西众帮物流有限公司</td>
+					<td>青山湖区</td>
+					<td>司机</td>
+					<td>2000元/月</td>
+				</tr>
+				<tr>
+					<td>江西众帮物流有限公司</td>
+					<td>青山湖区</td>
+					<td>司机</td>
+					<td>2000元/月</td>
+				</tr>
+			</table>
+		</div><!-- company -->
+
+		<div class="job">
+			<h1>求职人才</h1>
+			<table border="1">
+				<tr>
+					<th>姓名</th>
+					<th>性别</th>
+					<th>期望职位</th>
+					<th>所学专业</th>
+					<th>毕业院校</th>
+					<th>工作经验</th>
+					<th>期望月薪</th>
+					<th>更新时间</th>
+
+
+				</tr>
+				<tr>
+					<td>郭女士</td>
+					<td>女</td>
+					<td>物流仓储</td>
+					<td>交通工程</td>
+					<td>东华理工</td>
+					<td>1</td>
+					<td>2000</td>
+					<td>2015.11.21</td>
+				</tr>
+				<tr>
+					<td>郭女士</td>
+					<td>女</td>
+					<td>物流仓储</td>
+					<td>交通工程</td>
+					<td>东华理工</td>
+					<td>1</td>
+					<td>2000</td>
+					<td>2015.11.21</td>
+				</tr>
+				<tr>
+					<td>郭女士</td>
+					<td>女</td>
+					<td>物流仓储</td>
+					<td>交通工程</td>
+					<td>东华理工</td>
+					<td>1</td>
+					<td>2000</td>
+					<td>2015.11.21</td>
+				</tr>
+				<tr>
+					<td>郭女士</td>
+					<td>女</td>
+					<td>物流仓储</td>
+					<td>交通工程</td>
+					<td>东华理工</td>
+					<td>1</td>
+					<td>2000</td>
+					<td>2015.11.21</td>
+				</tr>
+			</table>
+		</div><!-- job -->
+
+	</div><!-- main-job -->
+
+
+	<div id="partner">
+		<div class="transport-lu">
+			<h3>陆运物流</h3>
+			<ul>
+				<li>江西众帮物流有限公司</li>
+				<li>江西鼎尊科技发展有限公司</li>
+				<li>南昌市诚光物流有限公司</li>
+				<li>南昌市诚光物流有限公司</li>
+				<li>江西乾峰实业发展有限公司</li>
+				<li>南昌乾龙物流有限公司</li>
+				<li>江西尧泰供应链管理有限公司</li>
+				<li>南昌市百达货运有限公司</li>
+				<li>南昌市金润广场鑫峰托运部</li>
+				<li>南昌鸿达货运服务有限公司</li>
+				<li>南昌市西湖区银燕灵通物流</li>
+				<li>江西众帮物流有限公司</li>
+			</ul>
+		</div>
+		<div class="transport-leng">
+			<h3>冷链物流</h3>
+			<ul>
+				<li>江西许昌众荣冷链物流有限公司</li>
+				<li>江西长远冷链物流有限公司</li>
+				<li>江西大昌冷链物流有限公司</li>
+				<li>江西恒冰物流有限公司</li>
+				<li>隆冷链物流有限公司</li>
+				<li>雪峰冷藏物流有限公司</li>
+				<li>安地物流有限公司</li>
+				<li>萍乡智达物流有限公司</li>
+				<li>江西省宏伟运输有限公司</li>
+				<li>江西安泰物流有限公司</li>
+				<li>江西华远冷链物流有限公司</li>
+			</ul>
+		</div>
+		<div class="member">
+			<h3>最新入网会员</h3>
+			<ul>
+				<li>高安市定日达物流有限公司</li>
+				<li>南昌联信物流有限公司</li>
+				<li>南昌市星球物流有限公司</li>
+				<li>南昌常春货运公司</li>
+				<li>江西安泰物流有限公司</li>
+				<li>南昌通达物流有限公司</li>
+				<li>南昌俊烨物流有限公司</li>
+				<li>南昌鸿达货运服务有限公司</li>
+			</ul>
+		</div>
+	</div>
+
+
+
+<div class="footer" >
+	<div class="footer_list">
+		<p>
+		  	<a href="">国家商务部</a>
+		  	<b>|</b>
+		  	<a href="">国家发改委</a>
+		  	<b>|</b>
+		  	<a href="">家财政部</a>
+		  	<b>|</b>
+		  	<a href="">国家科技</a>
+		  	<b>|</b>
+		  	<a href="">国家交通部</a>
+		  	<b>|</b>
+		  	<a href="">江西省商务厅</a>
+		  	<b>|</b>
+		  	<a href="">江西省发改委</a>
+		  	<b>|</b>
+		  	<a href="">江西省财政厅</a>
+		  	<b>|</b>
+		  	<a href="">江西省科技厅</a>
+		  	<b>|</b>
+		  	<a href="">江西省交通行</a>
+		  	<b>|</b>
+		  	<a href="">南昌公安交警网</a>
+		  	<b>|</b>
+		  	<a href="">江西省运输信息网</a>
+		</p>
+
+		<p>
+			<a href="">中华物流网</a>
+		  	<b>|</b>
+		  	<a href="">智慧流通网</a>
+		  	<b>|</b>
+		  	<a href="">物流中国</a>
+		  	<b>|</b>
+		  	<a href="">物流金融</a>
+		  	<b>|</b>
+		  	<a href="">满意网</a>
+		  	<b>|</b>
+		  	<a href="">锦程物流网</a>
+		  	<b>|</b>
+		  	<a href="">物流唐山</a>
+		  	<b>|</b>
+		  	<a href="">太原市公共信息平台</a>
+		  	<b>|</b>
+		  	<a href="">南京城市共同配送管理平台</a>
+		</p>
+
+
+
+	</div><!-- footer_list -->
+
+  	<div class="footer-bd">
+    <p>
+	    <a href="#">关于我们</a>
+	    <b>|</b>
+	    <a href="#">服务条款</a>
+	    <b>|</b>
+	    <a href="#">诚邀加盟</a>
+	    <b>|</b>
+	    <a href="#">联系我们</a>
+	    <b>|</b>
+	    <a href="#">APP下载</a>
+	    <b>|</b>
+	    <a href="#">投诉与建议</a>
+	    <b>|</b>
+	    <a href="#">合作伙伴</a>
+	</p>
+    <p>
+	    <span>主办：<a href="#">南昌市商务局</a></span>
+	    <b>|</b>
+	    <span>承办：<a href="#">江西尧泰供应链管理有限公司</a></span>
+	    
+    </p>
+    <p>
+    	<span>备案号：沪ICP备XXXXXX号</span>
+        <span>网站制度 证照信息公示</span>
+    </p>
+  	</div><!-- footer-bd -->
+  	</div><!--footer-->	
+
+	<!-- elevator 跳转 -->
+	<div id="elevator" class="elevator">
+		<a class="home">house</a>
+		<a href="#data-statistics"><span>1F</span></a>
+		<a href="#content"><span>2F</span></a>
+		<a href="#content-two"><span>3F</span></a>
+		<a href="#content-three"><span>4F</span></a>
+		<a href="#deliveryMap"><span>5F</span></a>
+		<a href="#main-job"><span>6F</span></a>
+		<a href="#partner"><span>7F</span></a>
+		<a href="#"><span>返回顶部</span></a>
+		
+	</div><!-- elevator -->
+	
+	
+  
+<script>
+
+
+
+ $(function(){
+
+
+
+
+
+
+
+
+   
+})
+</script>
+
+
+
+</body>
+</html>
+
