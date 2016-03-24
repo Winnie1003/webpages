@@ -1,12 +1,12 @@
 *{margin:0px;padding:0px;}
 
-#wrapper{width:948px;height:800px;margin:0 auto;font-family:"微软雅黑";font-size:16px;}
-#wrappper::after{
+#wrapper{width:948px;margin:0 auto;font-family:"微软雅黑";font-size:16px;}
+/*#wrappper::after{
     display: block;
     content:'';
     clear: both;
     overflow: hidden;
- }
+ }*/
 
 /*left content*/
 
@@ -114,11 +114,11 @@
 .breadcrumb li a:hover { background: #264B64; }
 .breadcrumb li a:hover:after { border-left-color: #264B64; }
 /*主体部分*/
-#wrapper .w_left{width:694px;float:left;position:relative;}
+#wrapper .w_left{width:694px;float:left;}
 #wrapper .w_right{width:210px;float:right;}
 #wrapper .w_left .l_title p{line-height:26px;color:#0025f4;}*/
-#wrapper .w_left .l_con{width:918px;margin:0px auto;margin-top:14px;}
-#wrapper .w_left .l_con .c_main{width:534px;height:475px;margin:10px auto;position:relative;}
+#wrapper .w_left .l_con{width:918px;margin:0px auto;margin-top:14px;position:relative;}
+#wrapper .w_left .l_con .c_main{width:534px;margin:10px auto;position:relative;}
 #wrapper .w_left .l_con .c_main p.m_title{text-align:center;color:#333;font-weight:600;font-size:18px;}
 #wrapper .w_left .l_con .c_main p.m_scan{text-align:right;font-size:14px;padding-right:9px;}
 #wrapper .w_left .l_con .c_main p.m_pubtime{font-size:14px;float:left;padding-left: 9px}
@@ -136,7 +136,7 @@
 #wrapper .w_left .l_con .c_main .m_info .i_con .c_right .r_right2{float:right;top:30px;left:198px;}
 
 /*photo*/
-#wrapper .w_left .l_con .c_main .m_photo{width:580px; height:114px;position:absolute;left:9px;}
+#wrapper .w_left .l_con .m_photo{margin-left:90px;width:580px; height:114px;}
 #wrapper .w_left .l_con .c_main .m_photo img{margin-right:5px;margin-top:10px;}
 
 /*right content*/
@@ -148,3 +148,10 @@
 #wrapper .w_right .r_con .c_words ul li a{text-decoration:none;}
 #wrapper .w_right .r_con .c_more{width:60px;height:16px;background:#2677b1;position:absolute;top:10px;right:0px;border-radius:5px;text-align:center;line-height:16px;}
 #wrapper .w_right .r_con .c_more a{text-decoration:none;color:#fc6;}
+/*分页*/
+
+#turn-page{clear:both;}
+#turn-page .record{ display: inline-block; padding: 10px; }
+#turn-page .page-tum{ width: 60px; height: 25px; background: #009EE5; border: none; color: #FFF; border-radius: 3px; box-shadow: 1px 1px 3px #cfcfcf; }
+#turn-page span.num{ display: inline-block; padding: 0 5px; } 
+#page-link{ margin-top: 10px; float: right; }

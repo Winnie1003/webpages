@@ -237,16 +237,17 @@
 								</div>
 								<!--table content end-->
 
-								<!--photo begin-->
-								<div class="m_photo">
-									<img src="images/u157.png" width="134px" height="113px" alt="" />
-									<img src="images/u157.png" width="134px" height="113px" alt="" />
-									<img src="images/u157.png" width="134px" height="113px" alt="" />
-									<img src="images/u157.png" width="134px" height="113px" alt="" />
-								</div>
-								<!--photo end-->
+								
 
 							</div>
+							<!--photo begin-->
+								<div class="m_photo">
+									<a href="#"><img src="images/u157.png" width="134px" height="114px" alt="" /></a>
+									<a href="#"><img src="images/u157.png" width="134px" height="114px" alt="" /></a>
+									<a href="#"><img src="images/u157.png" width="134px" height="114px" alt="" /></a>
+									<a href="#"><img src="images/u157.png" width="134px" height="114px" alt="" /></a>
+								</div>
+								<!--photo end-->
 							
 						</div>
 						<!--left content end-->
@@ -256,7 +257,7 @@
 					<!--right content begin-->
 					<div class="w_right">
 						<div class="r_photo">
-							<img src="images/u115.png" width="209px" height="79px" alt="" />
+							<a href="#"><img src="images/u115.png" width="209px" height="79px" alt="" /></a>
 						</div>
 						<div class="r_con">
 							<div class="c_news">
@@ -276,6 +277,26 @@
 						</div>
 					</div>
 					<!--right content end-->
+
+					<!-- 分页开始 -->
+					<div id="turn-page">
+					    <div class="record">
+							第<span class="pageCurrent num">1</span>/<span class="num">2</span>页,
+							每页<span class="totalRecords num">20</span>条
+					    </div>
+						<span id="page-link">
+						    <a href="#">第一页</a>
+						    <a href="#">上一页</a>
+						    <a href="#">下一页</a>
+						    <a href="#">最末页</a>
+						    <select id="gotoPage" onchange="listTable.gotoPage(this.value)">
+							    <option value='1'>1</option>
+							    <option value='2'>2</option>          
+						    </select>
+						    <input type="button" value="跳转到" class="page-tum"></input>
+						</span>
+					</div>
+					<!--分页结束-->
 
 		</div>
 			</div>
