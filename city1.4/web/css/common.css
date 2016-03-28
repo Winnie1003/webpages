@@ -1,0 +1,334 @@
+@charset "utfy-8";
+/***首页内页**/
+#head_nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#h_nav_ul{
+    width: 100%;
+	border-bottom:2px solid #2677B1;
+}
+#h_nav_ul>li{
+	text-align: center;
+	float: left;
+	width: 13%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #EFEFEF;
+    color:#212054;
+    margin-left: 2px;
+}
+#h_nav_ul::after{
+    display: block; content: ""; width: 0; clear: both;
+}
+#h_nav_ul>li:first-child{
+    margin-right: 2px;
+    margin-left: 0 !important;
+    width: 249px;
+    background-color: #2677B1;
+    color:#F7F7F7;
+}
+#h_nav_ul>li:first-child a{
+    color:#EFEFEF!important;
+}
+#h_nav_ul>li:first-child a:hover{
+    color: #F7F7F7!important;
+
+    background-color: #4981BD;
+}
+
+#h_nav_ul>li>a{
+    display: block;
+    width: 100%;
+}
+
+#h_nav_ul>li>a:hover{
+background-color:#F7F7F7 ;
+}
+
+.h_sub_menu{
+    border-top:2px solid #2677B1 ;
+    outline: 1px solid #D1D1D1;
+    display: none;
+}
+.h_sub_menu>li>a{
+    display: block;
+    width: 100%;
+}
+.h_sub_menu>li>a:hover{
+    display: block;
+    width: 100%;
+    background-color: #D9EFF1;
+}
+
+/*首页内页内容侧栏*/
+.list_content{
+    width: 1200px;
+    margin: 10px auto;
+}
+.list_content::after{
+    display: block;
+    clear: both;
+    content: '';
+    overflow: hidden;
+}
+.left_content{
+    width: 247px;
+    float: left;
+
+}
+.little_header{
+    width: 247px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color:#2677B1 ;
+    color: #F7F7F7;
+    margin-top:10px ;
+    position: relative;
+}
+.little_header>a{
+    position: absolute;
+    top:0;
+    left: 200px;
+    display:inline-block;
+    color: #F7F7F7;
+}
+.little_header>a:hover{
+ color: #C9CED0;
+}
+.little_content{
+    border: 1px solid #D1D1D1;
+}
+.little_content li{
+    height: 30px;
+    border-top: dashed 1px #dddddd;
+    line-height: 30px;
+}
+#ad_content{
+
+    border: 1px solid #D1D1D1;
+    height: 120px;
+    overflow: hidden;
+}
+#ad_content li{
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+#ad_ul li:nth-child(2n){
+    background-color: #CCE9EC;
+}
+.odd li:nth-child(2n+1){
+    background-color: #CCE9EC;
+}
+.even li:nth-child(2n){
+    background-color: #CCE9EC;
+}
+/************************************/
+
+.new-message{
+
+}
+.new-message>h1{
+    background-color: #2677B1;
+    font-size: 18px;
+    color: white;
+    padding: 10px 0px;
+}
+.new-message>ul{
+
+}
+.new-message>ul>li{
+    line-height: 26px;
+    background-color: azure;
+    font-size: 14px;
+    color: #666666;
+    padding-left: 6px;
+}
+
+
+
+
+
+/*****公有public****/
+.list_content .main-right{
+    width: 948px;
+   /* height: 500px;*/
+   /* background: red;*/
+    float: right;
+    margin-bottom: 100px;
+}
+
+/*************仓储详情部分****************/
+.storageWrap{
+    width: 800px;
+    margin: 0px auto;
+  
+}
+.storageWrap .headline{
+    width: 100%;
+}
+.storageWrap .headline>h1{
+    text-align: center;
+    font-size: 22px;
+    padding: 10px 0px;
+}
+.storageWrap .headline>p{
+    line-height: 25px;
+    text-align: right;
+    padding-right: 14px;
+}
+.storageWrap .headline>p.cle{
+    display: block;
+    clear: both;
+    content: '';
+    overflow: hidden;
+}
+.storageWrap .headline>p>h2{
+
+}
+.storageWrap .headline>p>span.left{
+    float: left;
+    padding-left: 22px;
+}
+.storageWrap .headline>p>span.right{
+    float: right;
+    padding-right: 8px;
+}
+.storageWrap>table{
+    width: 760px;
+    margin: 5px auto;
+    border: none;
+}
+.storageWrap>table tr>th{
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+.storageWrap>table tr>td{
+    border: 1px solid #cfcfcf;
+    line-height: 30px;
+}
+.storageWrap>table tr>td>p.marker{
+    padding-left: 6px;
+}
+.storageWrap>table tr>td:first-child{
+    width: 124px;
+    text-align: center;
+}
+.storageWrap>table tr>td:nth-child(2){
+    padding-left: 6px;
+}
+.storageWrap>table tr>td>dl{
+   /* padding-left: 6px;*/
+}
+.storageWrap>table tr>td>dl>dt{
+    line-height: 32px;
+    display: inline-block;
+    width: 92px;
+}
+.storageWrap>table tr>td>dl>dd{
+    display: inline-block;
+    width: 216px;
+}
+
+/**************/
+
+/***托盘出租部分****/
+
+/*代码和仓储详情部分一样*/
+
+/************/
+/*仓储列表style*/
+#breadcrumb-main{ width: 948px; margin:0 auto; }
+/*center-list style*/
+#center-list .menu{ padding:10px 20px; margin: 20px 0;}
+#center-list .menu .menu-title{ display:inline-block; /*height:25px;*/line-height: 34px; width: 90px; font-size:14px; color:#5A5A5A;}
+#center-list .menu span{ display:inline-block; width:35px; height:18px; line-height:18px; text-align:center; background-color:#FFCA02; color:#FFF; font-size:14px; margin:0 5px;}
+
+#conter-list .menu dl{ float: left; }
+#center-list .menu dd{ color:#424242; font-size:14px; display:inline-block; margin:0 5px; cursor: pointer;}
+.menu input{ margin-bottom: 3px; }
+.menu input.storage-search{ width: 200px; height: 28px; padding: 0 10px; margin-left: 10px; }
+.menu input.storage-btn{ width: 60px; height: 30px; background: #009EE5; color: #FFF; border: none; border-radius: 2px; font-size: 14px; }
+
+/*lease-table style*/
+#lease-table .table-title{ display: inline-block; padding: 10px 15px; background: #009EE5; color: #FFF; font-size: 18px; border-radius: 2px; }
+#lease-table .release-btn{ display: inline-block; padding: 5px 10px; margin-right: 20px; border: 1px solid #CCC; border-radius: 3px; box-shadow: 1px 1px 3px #cfcfcf; color: #333; text-decoration: none; float: right; background: #EEFFFF; }
+
+#lease-table table{ width: 948px; color: #000; }
+#lease-table table tr{ border-bottom: 1px solid #BBDDE5;}
+#lease-table table th{ background: #2677B1 url(../images/line.png) no-repeat center left; height: 30px; text-align: center; color: #FFF; }
+#lease-table table th.first{ background: #2677B1; }
+#lease-table table td{ padding:10px;  position: relative;}
+#lease-table table td .title-img{ display: inline-block; padding: 34px 10px; }
+td ul.depot-info{ list-style: none; position: absolute; left: 150px; top:10px; }
+li.area-info{ color: #0000FF; }
+li font.area{ color: #FF0000; }
+
+td ul.acreage-info{ list-style: none; margin: 10px; }
+.acreage-info font{ color: #FF0000; }
+
+a.release-date{ color: #000; text-decoration: none; margin:0 auto; }
+
+a.details{ color: #0000FF; text-decoration: none; }
+a.details:hover{ color: #009EE5; }
+#page-link a{ display: inline-block; padding:0 7px; line-height: 22px; text-align: center; margin-right: 5px; }
+#page-link a.yangshi{ color: #FFF; background: #009EE5; }
+#page-link a:hover{ color: #333; background: #DDD; }
+
+#turn-page .record{ display: inline-block; padding: 10px; }
+.page-btnLink{ float: right; margin-top: 10px; }
+#turn-page #page-tum{ width: 40px; }
+#turn-page #page-btn{ width: 60px; height: 25px; background: #009EE5; border: none; color: #FFF; border-radius: 3px; box-shadow: 1px 1px 3px #cfcfcf; }
+#turn-page span.num{ display: inline-block; padding: 0 5px; } 
+#page-link{ margin-top: 10px; float: right; }
+
+
+/*政府公告详情style*/
+#main_header{ width: 948px; margin:0 auto; }
+
+#bread-center h1{ color: #E13C15; font-size: 24px; border-bottom: 1px dashed #DADADA; text-align: center; padding: 30px; }
+.release{ text-align: center; color: #6F6C6D; padding-top: 10px; }
+.remark{ border: 1px solid #59ACFF; background: #ECF5FF; padding: 10px; margin: 20px; text-align: center; line-height: 25px; }
+.remark .remark-bold{ font-weight: bold; font-size: 16px; }
+.main-text{ color: #6F6C6D; font-size: 15px; padding: 0 10px; margin: 10px; text-indent:2em; line-height: 30px; }
+
+.article{ color: #6F6C6D; font-size: 14px; border-top: 1px dashed #DADADA; padding: 10px 0 0 10px; margin: 10px 0 0 10px; }
+.article a{ text-decoration: none; color: #6F6C6D; }
+
+
+/************************/
+
+/****会员中心****/
+
+/**会员中心设备供应**/
+.dl-list{
+    padding: 10px;
+    width: 942px;
+    border: 1px solid #cfcfcf;
+    margin: 24px auto;
+    position: relative;
+}
+.dl-list>dl{
+
+}
+.dl-list>dl>dt{
+    display: inline-block;
+    padding-right: 22px;
+    line-height: 36px;
+}
+.dl-list>dl>dd{
+    display: inline-block;
+    padding-right: 80px;
+}
+.dl-list>dl>dd>a{
+
+}
+.dl-list>.search{
+    position: absolute;
+    top: 46px;
+    left: 618px;
+}

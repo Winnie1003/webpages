@@ -1,0 +1,94 @@
+/*会员中心*/
+.heighter{
+	height: 100px !important;
+	padding-top: 20px;
+}
+	
+#vip_content,#vip_nav{
+	width: 1200px;
+	margin: 0 auto;
+}
+#sub_nav{
+	background-color: #2677B1;
+	color: #F7F7F7;
+	height: 32px;
+	width: 200px;
+	text-align: center;
+	padding-top: 5px;
+}
+#vip_menu{
+	width: 200px;
+	border: 1px solid #CFCFCF;
+	position: relative;
+}
+#vip_menu ul li{
+padding:8px;
+height: 37px;
+text-align: center;
+border-top: 1px solid #CFCFCF;
+
+}
+
+
+
+
+#vip_menu ul li:first-child{
+border: none;
+}
+
+.sub_menu{
+	position: absolute;
+	top:0;
+	left: 198px;
+	width: 200px;
+	height: auto;
+	border: 1px solid #2677B1;
+	display: none;
+	z-index:2;
+
+}
+.sub_menu>li{
+	border: none !important;
+	height: 37px !important;
+	padding:8px;
+}
+#main_menu>li:hover{
+	border: none !important;
+	outline:1px solid #2677B1;
+}
+
+.no_sub:hover{
+	background-color: #2677B1;
+	color: #FFFFFF ;
+	box-sizing: border-box;
+	border: 2px solid #FFFFFF;
+}
+#border {
+	width: 1px;
+	height: 38px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left:198px;
+	top:0px;
+	z-index:3;
+	display: none;
+
+}
+.sub_menu>li:hover{
+background-color:#E3F3F5;
+}
+
+.no_sub>a{
+	display: block;
+	
+	height: 37px;
+	text-align: center;
+	
+   color: #666666 !important;
+}
+.no_sub>a:link {color: #FF0000} 
+.no_sub>a:visited {color: ##2677B1;}  /* 已访问的链接 */
+.no_sub>a:hover{
+	color:#FFFFFF !important;
+}
+.no_sub>a:active {color: #0000FF}

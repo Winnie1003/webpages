@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/*breadcrumb*/
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden !important;
+    font: 14px Helvetica, Arial, Sans-Serif;
+}
+.breadcrumb li {
+    float: left;
+}
+.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    padding: 7px 0 7px 55px;
+    background-color: #2677B1;                   /* fallback color */
+    position: relative;
+    display: block;
+    float: left;
+}
+.breadcrumb li a:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #2677B1;;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.breadcrumb li a:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+/*不含链接的‘当前位置’*/
+.breadcrumb li:first-child {
+
+    color: white;
+    text-decoration: none;
+    padding: 7px 0 7px 20px;
+    background-color: #2677B1;
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.breadcrumb li:first-child:after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid #2677B1;;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 100%;
+    z-index: 2;
+}
+.breadcrumb li:first-child:before {
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+    border-left: 30px solid white;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: 1px;
+    left: 100%;
+    z-index: 1;
+}
+/*颜色控制*/
+.breadcrumb li:nth-child(2) a       { background: #42929D; }
+.breadcrumb li:nth-child(2) a:after { border-left-color:#42929D; }
+.breadcrumb li:nth-child(3) a       { background:#3AB2C3; }
+.breadcrumb li:nth-child(3) a:after { border-left-color: #3AB2C3; }
+.breadcrumb li:nth-child(4) a       { background:#B6DDC8; }
+.breadcrumb li:nth-child(4) a:after { border-left-color: #B6DDC8; }
+
+/*hover*/
+.breadcrumb li a:hover { background: #264B64; }
+.breadcrumb li a:hover:after { border-left-color: #264B64; }
