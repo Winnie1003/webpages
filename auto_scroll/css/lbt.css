@@ -1,0 +1,18 @@
+/* 
+* @Author: anchen
+* @Date:   2015-08-18 12:44:47
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-08-18 22:31:19
+*/
+*{margin:0px;padding:0px;}
+.flash{width:820px;height:419px;background:yellow;margin:100px auto;position:relative;}
+.flash a{width:71px;height:71px;position:absolute;top:180px;display:block;z-index: 333;}
+.flash a.prev{left:-35px;background:url("../images/but.png") 71px 0px;}
+.flash a.next{right:-35px;background:url("../images/but.png") 71px 71px;}
+.flash a.prev:hover{background-position:0px 0px;}
+.flash a.next:hover{background-position:0px -71px;}
+.flash .scroll{width:820px;height:419px;position:relative;overflow: hidden;}
+.flash .scroll img{position:absolute;left:820px;}
+.flash .But{width:150px;height:20px;background:rgba(0,0,0,0.5);border-radius:20px;position:absolute;left:340px;bottom:10px;text-align:center;}
+.flash .But span{width:10px;height:10px;display:inline-block;background:#666;border-radius:5px;}
+.flash .But span.hover{background:#f09;}
