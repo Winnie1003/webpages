@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集gbk,gb2312中文编码,utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--当前页面三要素-->
+		<title>编程题5</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0px;padding:0px;}
+		</style>
+	</head>
+
+<body>
+ <form action="#" method="post" name="form1" onsubmit="return num();">
+	 <input type="radio" name="radioGroup"/>
+	 <input type="radio" name="radioGroup"/>
+	 <input type="radio" name="radioGroup"/>
+	 <input type="radio" name="radioGroup"/>
+	 <input type="radio" name="radioGroup"/>
+	 <input type="submit" value="提交">
+ </form>
+<script type="text/javascript">
+function num(){
+	var c = document.getElementsByName("radioGroup");
+	for (var i = 0;i<c.length;i++){
+		if(c[i].checked){
+			alert("您当前选中的是第"+(i+1)+"个单选框");
+		}
+	}
+	return false;
+}
+</script>
+</body>
+</html>
