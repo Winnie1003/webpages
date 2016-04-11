@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+<style type="text/css">
+/*body{background:url("images/bg.jpg");}*/
+*{margin:0px;padding:0px;}
+body{overflow:hidden; background:#000;}
+#xx{width:200px;height:200px; background:url("images/xx.png"); position:absolute;
+	left:44%;top:0px; 
+	-webkit-animation:around 5s ease-in-out infinite ;
+	animation:around 5s ease-in-out infinite ;
+	-moz-animation:around 5s ease-in-out infinite ;
+	}
+@-webkit-keyframes around{
+	0% {
+    transform: rotate(30deg);
+    transform-origin: center top 0px;
+	}
+	50% {
+		transform: rotate(-30deg);
+		transform-origin: center top 0px;
+	}
+	100% {
+		transform: rotate(30deg);
+		transform-origin: center top 0px;
+	}
+}
+
+
+@-webkit-keyframes around{
+	0% {
+    -webkit-transform: rotate(30deg);
+    -webkit-transform-origin: center top 0px;
+	}
+	50% {
+		-webkit-transform: rotate(-30deg);
+		-webkit-transform-origin: center top 0px;
+	}
+	100% {
+		-webkit-transform: rotate(30deg);
+		-webkit-transform-origin: center top 0px;
+	}
+}
+
+@-moz-keyframes around{
+	0% {
+    -moz-transform: rotate(30deg);
+    -moz-transform-origin: center top 0px;
+	}
+	50% {
+		-moz-transform: rotate(-30deg);
+		-moz-transform-origin: center top 0px;
+	}
+	100% {
+		-moz-transform: rotate(30deg);
+		-moz-transform-origin: center top 0px;
+	}
+}
+
+.gray{width:100%;height:100%; position:fixed; left:0px; top:0px; background:rgba(0,0,0,0.5); display:none;}
+.gray .but{width:100%;height:80px; background:rgba(0,0,0,0.7); position:fixed; left:0px; bottom:0px;}
+.gray .but .butCon{width:560px; height:30px; margin:25px auto; background:#fff; border-radius:4px; position:relative;}
+.gray .but .butCon p.txt{width:400px; height:30px; border:0px;border-radius:4px;float:left;}
+.gray .but .butCon span{display:inline-block; width:80px; background:#F4354B; color:#fff; font-size:12px; text-indent:10px;
+						line-height:30px; height:30px;float:right;border-radius:0px 4px 4px 0px;}
+.gray .but .butCon span.col{ display:block; width:80px;height:30px; float:left; color:#000; line-height:30px;
+						border-radius:4px 0px 0px 4px; position:relative;background:#F3F3F3; }
+.gray .but .butCon span.col font{width:10px;height:10px; border:1px solid red; border:1px solid #000; display:inline-block;
+								background:red;  position:absolute; right:25px; top:9px;}
+.butCon ul{position:absolute; width:80px; left:0px; bottom:28px; display:none;}
+.butCon ul li{height:30px; background:#F3F3F3; font-size:12px; color:#000;line-height:30px; list-style-type:none;text-indent:10px;}
+.butCon ul li font{width:10px;height:10px; display:inline-block; border:1px solid #000;}
+
+.gray .Txt{width:60%;height:65%; margin:200px auto; text-align:center; font-family:"微软雅黑";
+				font-size:20px; line-height:30px;color:#fff}
+</style>
+ </head>
+ <body>
+<audio src="1.mp3" id="Music" ></audio>
+
+ <div id="xx"></div>
+
+ <div class="gray">
+	<!--按扭开始-->
+	<div class="but">
+		<div class="butCon">
+			<span class="col">
+				颜色 <font></font>
+			</span>
+			<ul class="col">
+				<li data-color="#fff">颜色 <font style="background-color:#fff"></font></li>
+				<li class="selected" data-color="#01FFEA">颜色 <font style="background-color:#01FFEA"></font></li>
+				<li data-color="#6BFF6E">颜色 <font style="background-color:#6BFF6E"></font></li>
+				<li data-color="#DE86FF">颜色 <font style="background-color:#DE86FF"></font></li>
+				<li data-color="#e74d6c">颜色 <font style="background-color:#e74d6c"></font></li>
+				<li data-color="#fff600">颜色 <font style="background-color:#fff600"></font></li>
+			</ul>
+
+
+			<p class="txt" contenteditable="true" placholder="亲爱的，你爱我吗？ w(ﾟДﾟ)"></p>
+			<span>清空再写</span>
+		</div>
+	</div>
+	<!--按扭结束-->
+
+
+
+	<!--内容展示开始-->
+	<div class="Txt">
+		
+	</div>
+	<!--内容展示结束-->
+ </div>
+
+
+
+ 
+ <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+
+<script src="js/snowfall.jquery.js"></script> 
+<script>
+        $(document).snowfall('clear');
+        $(document).snowfall({
+            image: "images/huaban.png",
+            flakeCount:30,
+            minSize: 5,
+            maxSize: 22
+        });
+    </script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
+<script type="text/javascript">
+
+
+
+$("span.col").click(function(){
+	$("ul.col").slideToggle();
+	
+
+});
+$("ul.col li").click(function(){
+	var color = $(this).data("color");
+	$("span.col").find("font").css("background",color);
+	$(this).addClass("selected").siblings().removeClass("selected");
+	$("ul.col").slideToggle("slow");
+});
+
+$("#xx").click(function(){
+	$(".gray").show();
+	$("#Music").get(0).play();
+	$("#Music").get(0).volume=0.3;
+	
+});
+
+
+
+	
+	var arr = [];
+	$("p.txt").keyup(function(e){
+		var color = $(".selected").data("color")
+		var txt = "<span style='color:"+color+"'>"+$(this).text()+"</span>";
+		$(".Txt").html(arr.join("").toString()+txt);
+		if(e.keyCode==13){
+			$(".Txt").empty();
+			arr.push("<p style='color:"+color+"'>"+txt+"</p>");
+			var html = "";
+			for(var i=0;i<arr.length;i++){
+				html+=arr[i];
+			}
+			$(".Txt").append(html);
+			$(this).empty();
+		}
+		
+
+
+		/*var txt=$(this).text();
+		if(txt==""){
+			$(".Txt").append("<p>"+txt+"</p>");
+		}else{
+			$(".Txt").append(txt);
+		}*/
+	});
+</script>   
+ </body>
+</html>
