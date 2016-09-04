@@ -1,2 +1,0 @@
-# webpages
-daily practice webpages
